@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUMMIT OF FUTURE 2026 | TSOF</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGO -->
+<div class="logo-wrap">
+    <img src="logo.svg" alt="TSOF Logo">
+</div>
+
+<!-- FORM -->
+<div class="container">
+  <h1>JAIN UNIVERSITY STUDENTS ATTENDANCE</h1>
+
+  <form id="summitForm">
+
+    <div class="form-group">
+      <label>Student Name *</label>
+      <input id="studentName" type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>USN *</label>
+      <input id="usn" type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>Department *</label>
+      <select id="department" required>
+        <option value="">Select Department</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Specialization *</label>
+      <input id="specialization" type="text" required>
+    </div>
+
+    <div class="form-group">
+      <label>UG / PG *</label>
+      <select id="level" required>
+        <option value="">Select Academic Level</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Semester *</label>
+      <select id="semester" required>
+        <option value="">Current Semester</option>
+      </select>
+    </div>
+    <div class="form-group">
+       <label>Committee *</label>
+        <select id="committee" required>
+            <option value="">Select Committee</option>
+        </select>
+    </div>
+    <!-- STATUS MESSAGE (IMPORTANT) -->
+    <p id="status" style="margin-top:15px;text-align:center;"></p>
+
+    <button type="submit" class="btn-submit">
+      INITIALIZE REGISTRATION
+    </button>
+
+  </form>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<style>
+:root {
+    --deep-purple: #0f0524;
+    --electric-purple: #a855f7;
+    --light-purple: #e9d5ff;
+    --glass-bg: rgba(255,255,255,0.08);
+    --neon-glow: 0 0 25px rgba(168, 85, 247, 0.65);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+
+    background:
+        linear-gradient(
+            rgba(15, 5, 36, 0.55),
+            rgba(15, 5, 36, 0.65)
+        ),
+        url("TSOF_PRODUCTS_FOR_WEBSITE_d5e381051d.webp")
+        center / cover no-repeat fixed;
+
+    display: flex;
+    justify-content: center;
+    padding: 120px 20px 60px;
+}
+
+/* LIGHT PURPLE LOGO GLASS */
+.logo-wrap {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+
+    background: linear-gradient(
+        135deg,
+        rgba(216, 180, 254, 0.38),
+        rgba(168, 85, 247, 0.28)
+    );
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    padding: 12px 18px;
+    border-radius: 14px;
+
+    border: 1px solid rgba(216, 180, 254, 0.45);
+
+    box-shadow:
+        0 8px 30px rgba(168, 85, 247, 0.35),
+        inset 0 0 0 1px rgba(255,255,255,0.25);
+}
+
+.logo-wrap img {
+    width: 150px;
+    height: auto;
+    display: block;
+    filter:
+        drop-shadow(0 0 6px rgba(255,255,255,0.9))
+        drop-shadow(0 0 18px rgba(168,85,247,0.8));
+}
+
+/* FORM CONTAINER */
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+
+    border-radius: 30px;
+    padding: 40px;
+
+    border: 1px solid rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.6),
+        inset 0 0 0 1px rgba(255,255,255,0.05);
+
+    animation: fadeIn 0.9s ease;
+}
+
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 1.35rem;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: var(--light-purple);
+    text-shadow: var(--neon-glow);
+}
+
+.form-group { margin-bottom: 25px; }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.75rem;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--light-purple);
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    background: rgba(0,0,0,0.45);
+    border: 1px solid rgba(168,85,247,0.45);
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+    border-color: var(--electric-purple);
+    box-shadow: var(--neon-glow);
+    transform: translateY(-2px);
+}
+
+select option {
+    background: #1a0b36;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 20px;
+    margin-top: 15px;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #7e22ce, #a855f7);
+    border: none;
+    border-radius: 14px;
+    color: white;
+    cursor: pointer;
+    transition: 0.35s ease;
+}
+
+.btn-submit:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 40px rgba(168,85,247,0.85);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    .logo-wrap img { width: 120px; }
+    .container { padding: 30px 24px; }
+}
+</style>
